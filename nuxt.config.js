@@ -31,10 +31,21 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    ['nuxt-fontawesome', {
+      component: 'fa', //customize component name
+      imports: [
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['faGithub', 'faTwitter', 'faLinkedin']
+        },
+      ]
+    }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/style-resources', '@nuxt/content'],
+  modules: [
+    '@nuxtjs/style-resources',
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
