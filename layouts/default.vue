@@ -5,6 +5,13 @@
 </template>
 
 <style>
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"),
+    url(../assets/fonts/Raleway-ExtraLight.ttf) format("truetype");
+}
+
 html {
   font-family:
     'Source Sans Pro',
