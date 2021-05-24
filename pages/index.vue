@@ -32,10 +32,9 @@ export default {};
   box-sizing: border-box;
 }
 
-$padding: 50px;
-
 .container {
   perspective: 800px;
+  min-width: 320px;
 
   /* Styling */
   color: #fff;
@@ -49,8 +48,8 @@ $padding: 50px;
 
 .card {
   /* Styling */
-  width: 700px;
-  height: 400px;
+  width: 480px;
+  height: 240px;
   background: rgb(20, 20, 20);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
@@ -74,12 +73,12 @@ $padding: 50px;
 }
 
 /* Make semi-responsive */
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .card {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
   .container:hover .card {
-    transform: scale(0.5) rotateY(-180deg) translateZ(1px);
+    transform: scale(0.8) rotateY(-180deg) translateZ(1px);
   }
 }
 
@@ -94,16 +93,18 @@ $padding: 50px;
 
 /* Back styling */
 .back {
-  padding: $padding;
+  padding: 50px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
   // outline: 1px solid #19f6e8;
-  padding: 40px;
   text-transform: uppercase;
   font-family: "Raleway";
-  font-size: 4em;
+  font-size: 2em;
   font-weight: normal;
   letter-spacing: 10px;
 }
@@ -111,16 +112,15 @@ $padding: 50px;
 hr {
   border: 0;
   border-top: 1px solid #19f6e8;
-  margin: 0px 220px;
+  margin: 0px 120px;
 }
 
 .social {
-  margin-top: 50px;
   color: fade-out(#fff, 0.6);
   a {
     color: gray;
-    font-size: 50px;
-    padding: 25px;
+    font-size: 1.8em;
+    padding: 10px;
     &:hover {
       color: fade-out(#fff, 0.2);
     }
