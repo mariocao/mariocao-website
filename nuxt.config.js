@@ -10,8 +10,19 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
+      { name: 'theme-color', content: '#0094a8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Mario Cao',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Personal website of Mario Cao',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
