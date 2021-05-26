@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'Mario Cao',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
@@ -20,8 +20,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Personal website of Mario Cao',
+        content: 'Personal website of Mario Cao',
       },
     ],
     link: [
@@ -29,42 +28,39 @@ export default {
       { rel: 'shortcut icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap',
-      }
-    ]
+        href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    ['nuxt-fontawesome', {
-      component: 'fa', //customize component name
-      imports: [
-        {
-          set: '@fortawesome/free-brands-svg-icons',
-          icons: ['faGithub', 'faTwitter', 'faLinkedin']
-        },
-      ]
-    }]
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa', // customize component name
+        imports: [
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['faGithub', 'faTwitter', 'faLinkedin'],
+          },
+        ],
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/style-resources',
-  ],
+  modules: ['@nuxtjs/style-resources'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {},
 }

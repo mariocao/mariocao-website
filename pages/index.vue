@@ -24,10 +24,11 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style scoped lang="scss">
+$raleway-font-family: 'Raleway';
 
 * {
   box-sizing: border-box;
@@ -63,6 +64,7 @@ export default {};
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+
   /* Fix Chrome rendering bug */
   transform: rotate(0deg) translateZ(1px);
 }
@@ -104,7 +106,7 @@ export default {};
 .title {
   // outline: 1px solid #19f6e8;
   text-transform: uppercase;
-  font-family: "Raleway";
+  font-family: $raleway-font-family;
   font-size: 2em;
   font-weight: normal;
   letter-spacing: 10px;
@@ -113,7 +115,7 @@ export default {};
 hr {
   border: 0;
   border-top: 1px solid #19f6e8;
-  margin: 0px 120px;
+  margin: 0 120px;
 }
 
 .social {
